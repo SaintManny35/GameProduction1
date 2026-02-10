@@ -32,6 +32,8 @@ public class EnemyController : MonoBehaviour
             direction = -direction;
             timer = changeTime;
         }
+
+
     }
 
     void FixedUpdate()
@@ -48,18 +50,6 @@ public class EnemyController : MonoBehaviour
         }
 
         rb2d.MovePosition(position);
-
-    }
-
-    public void OEnter2D(Collision2D other)
-    {
-        PlayerController player = other.gameObject.GetComponent<PlayerController>();
-
-        if(player != null)
-        {
-            
-
-        }
 
     }
 }
